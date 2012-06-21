@@ -21,6 +21,7 @@ endfunction
 if exists(':StringAbbrLocal') != 2
     finish
 endif
+
 "new snippet
 StringAbbrLocal new "\/* @var $[~var~]_form [~type~]Form */\n\t$[~var~]_form = $this->getContext()->getController()->getForm(\"[~fp:Bloosky~]\", \"[~type~]\");\n\t/* @var $[~var~]_model [~type~]Model */\n$[~var~]_model = $this->getContext()->getController()->getModel(\"[~fp:Bloosky~]\", \"[~type~]\");\n$[~var~]_form = [~~]"
 StringAbbrLocal ech "echo $[~var~];\n[~~]"
