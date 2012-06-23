@@ -1,5 +1,5 @@
 #!/bin/sh
-INSTALL_TO=~/Projects
+INSTALL_TO=~/etc
 
 warn() {
     echo "$1" >&2

@@ -183,6 +183,13 @@ nnoremap <leader>; ;
 " Avoid accidental hits of <F1> while aiming for <Esc>
 noremap! <F1> <Esc>
 
+" clear white space
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+" Start ACK
+nnoremap <leader>a :Ack
+nnoremap <leader>q gqip
+nnoremap <leader>v V`] 
+
 " Quickly close the current window
 nnoremap <leader>q :q<CR>
 
@@ -558,7 +565,7 @@ au filetype vim set formatoptions-=o
 " }}}
 
 " Extra user or machine specific settings {{{
-source ~/.vim/user.vim
+"source ~/.vim/user.vim
 " }}}
 
 " Creating underline/overline headings for markup languages
@@ -596,7 +603,7 @@ if has("gui_running")
     set guioptions-=R
 else
     set bg=dark
-    colorscheme molokai_deep
+    colorscheme hhteal
 endif
 
 " Pulse ------------------------------------------------------------------- {{{
